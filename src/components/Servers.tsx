@@ -4,7 +4,6 @@ import { increase } from '../store/slices/stepsSlice';
 import { updateServerInfo } from '../store/slices/serversSlice';
 import * as images from '../images';
 
-type Positions = {[property: string]: { position: string, left: string, top: string, zIndex: string }};
 
 type Props = {}
 
