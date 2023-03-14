@@ -4,7 +4,7 @@ import { increase } from '../store/slices/stepsSlice';
 import { updateServerInfo } from '../store/slices/serversSlice';
 import * as images from '../images';
 
-type Positions = {[property: string]: {position: string, left: string, top: string, zIndex: string}};
+type Positions = {[property: string]: { position: string, left: string, top: string, zIndex: string }};
 
 type Props = {}
 
@@ -13,7 +13,7 @@ function Servers({}: Props) {
     const servers = useSelector((state: RootState) => state.servers.value);
     const dispatch = useDispatch();
 
-    const positions: Positions = {
+    const positions: any = {
         westUsa: { position: 'absolute', left: '175px', top: '325px', zIndex: '100' },
         eastUsa: { position: 'absolute', left: '355px', top: '305px', zIndex: '100' },
         germany: { position: 'absolute', left: '615px', top: '275px', zIndex: '100' },
